@@ -1,0 +1,223 @@
+{
+  "trigger": {
+    "triggerId": "created-record",
+    "label": "Created Record",
+    "authenticationId": ["ss-auth"],
+    "inputs": [
+      {
+        "inputId": "application-id",
+        "label": "App",
+        "icon": "",
+        "subLabel": "",
+        "dynamic": true,
+        "value": {
+          "type": 2,
+          "multiple": false
+        },
+        "display": {
+          "display": {
+            "oneofKind": "always",
+            "always": 0
+          },
+          "showRequiredStatus": 1
+        },
+        "editor": {
+          "editor": {
+            "oneofKind": "select",
+            "select": {
+              "options": [
+                {
+                  "value": "62ea1d757879407f836ad7e5",
+                  "label": "App 1",
+                  "color": ""
+                },
+                {
+                  "value": "62ebd825e634b462436c98fb",
+                  "label": "App 2",
+                  "color": ""
+                }
+              ],
+              "multiple": false
+            }
+          },
+          "validation": {},
+          "required": true
+        }
+      }
+    ],
+    "outputs": [
+      {
+        "outputId": "context-output-application",
+        "label": "App Name",
+        "icon": "text",
+        "contextSpecific": true,
+        "value": {
+          "type": 2,
+          "multiple": false
+        }
+      },
+      {
+        "outputId": "context-output-current-user",
+        "label": "Current User",
+        "icon": "user",
+        "contextSpecific": true,
+        "value": {
+          "type": 11,
+          "multiple": false
+        }
+      },
+      {
+        "outputId": "context-output-record-url",
+        "label": "Link to Record",
+        "icon": "link",
+        "contextSpecific": true,
+        "value": {
+          "type": 12,
+          "multiple": false
+        }
+      },
+      {
+        "outputId": "context-output-solution",
+        "label": "Solution Name",
+        "icon": "text",
+        "contextSpecific": true,
+        "value": {
+          "type": 2,
+          "multiple": false
+        }
+      },
+      {
+        "outputId": "context-output-today",
+        "label": "Today’s Date",
+        "icon": "date-select",
+        "contextSpecific": true,
+        "value": {
+          "type": 6,
+          "multiple": false
+        }
+      },
+      {
+        "outputId": "context-output-account",
+        "label": "Workspace Name",
+        "icon": "text",
+        "contextSpecific": true,
+        "value": {
+          "type": 2,
+          "multiple": false
+        }
+      }
+    ],
+    "conditionFields": [
+      {
+        "conditionFieldId": "context-output-application",
+        "label": "App Name",
+        "value": {
+          "type": 2,
+          "multiple": false
+        },
+        "editor": {
+          "editor": {
+            "oneofKind": "text",
+            "text": {
+              "default": "",
+              "type": 0
+            }
+          },
+          "validation": {},
+          "required": false
+        }
+      },
+      {
+        "conditionFieldId": "context-output-current-user",
+        "label": "Current User",
+        "value": {
+          "type": 11,
+          "multiple": false
+        },
+        "editor": {
+          "editor": {
+            "oneofKind": "member",
+            "member": {
+              "multiple": false
+            }
+          },
+          "validation": {},
+          "required": false
+        }
+      },
+      {
+        "conditionFieldId": "context-output-record-url",
+        "label": "Link to Record",
+        "value": {
+          "type": 12,
+          "multiple": false
+        },
+        "editor": {
+          "editor": {
+            "oneofKind": "link",
+            "link": {
+              "multiple": false
+            }
+          },
+          "validation": {},
+          "required": false
+        }
+      },
+      {
+        "conditionFieldId": "context-output-solution",
+        "label": "Solution Name",
+        "value": {
+          "type": 2,
+          "multiple": false
+        },
+        "editor": {
+          "editor": {
+            "oneofKind": "text",
+            "text": {
+              "default": "",
+              "type": 0
+            }
+          },
+          "validation": {},
+          "required": false
+        }
+      },
+      {
+        "conditionFieldId": "context-output-today",
+        "label": "Today’s Date",
+        "value": {
+          "type": 6,
+          "multiple": false
+        },
+        "editor": {
+          "editor": {
+            "oneofKind": "date",
+            "date": {}
+          },
+          "validation": {},
+          "required": false
+        }
+      },
+      {
+        "conditionFieldId": "context-output-account",
+        "label": "Workspace Name",
+        "value": {
+          "type": 2,
+          "multiple": false
+        },
+        "editor": {
+          "editor": {
+            "oneofKind": "text",
+            "text": {
+              "default": "",
+              "type": 0
+            }
+          },
+          "validation": {},
+          "required": false
+        }
+      }
+    ],
+    "subLabel": ""
+  }
+}
